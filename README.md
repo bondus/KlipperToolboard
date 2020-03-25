@@ -1,6 +1,9 @@
 # Klipper Toolboard
 A very small 3D printer board for use on a toolhead.
 
+
+![Image of Board](Board.jpg)
+
 Features: 
 * TMC2209 driver
 * ATmega168
