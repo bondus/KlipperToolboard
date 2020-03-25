@@ -1,5 +1,5 @@
 # Klipper Toolboard
-A very small 3D printer board for use on a toolhead.
+A very small 3D printer board for use on a toolhead. So far it is totally untested and most likely does not work.
 
 
 ![Image of Board](Board.jpg)
