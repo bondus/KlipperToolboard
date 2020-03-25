@@ -26,3 +26,7 @@ Alternative design options:
 * Create a local 5V/3.3V instead? Switch regulator + LDO. Only the servo needs 5V
 * USB-c would be neat, it could provide all the power and signalling needed
 
+Production:
+Is can be manufactured by JLCBCP, they have all the components (except connectors). The cost for a 10pcs including components and manufacturing is about $90.
+
+
