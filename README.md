@@ -7,7 +7,7 @@ A very small 3D printer board for use on a toolhead. So far it is totally untest
 Features: 
 * TMC2209 driver
 * ATmega168
-* Two MOSFET drivers fans
+* Two small MOSFET drivers for fans
 * One big MOSFET driver for a hotend heater
 * Thermistor input
 * One servo
