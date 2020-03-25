@@ -17,7 +17,7 @@ Features:
 It should be fed from the mainboard with 12-24V, 5V, GND, UART RX and UART TX. 
 
 Possible issues:
-* Is the cooling for the TMC2209 adequate?
+* Is the cooling for the TMC2209 adequate? Go 4-layer?
 * How well will the UART cmos/ttl level survive? Noise?
 * Does it work
 
