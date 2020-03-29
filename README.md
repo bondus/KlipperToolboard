@@ -6,23 +6,18 @@ A very small 3D printer board for use on a toolhead.
 
 Features: 
 * TMC2209 driver
-* ATmega168
+* STM32F103C8T6
 * Two MOSFET drivers fans
 * One big MOSFET driver for a hotend heater
 * Thermistor input
-* One servo
 * One endstop
 
+Main power is 12-24V
 
-It should be fed from the mainboard with 12-24V, 5V, GND, UART RX and UART TX. 
+
+Communication with host is done via micro USB, small electronics is powered though that
 
 Possible issues:
 * Is the cooling for the TMC2209 adequate?
-* How well will the UART cmos/ttl level survive? Noise?
-* Does it work
 
-Alternative design options: 
-* Use an ARM instead? STM32F030
-* Create a local 5V/3.3V instead? Switch regulator + LDO. Only the servo needs 5V
-* USB-c would be neat, it could provide all the power and signalling needed
 
