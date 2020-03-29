@@ -14,8 +14,9 @@ Features:
 
 Main power is 12-24V
 
-
 Communication with host is done via micro USB, small electronics is powered though that
+
+All done in KiCad
 
 Possible issues:
 * Is the cooling for the TMC2209 adequate?
