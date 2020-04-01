@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AON7418
+D MOSFET N TRENCH 30V 46A 2.2V @ 250UA 1.7 MΩ @ 20A,10V DFN-8 ROHS
+$ENDCMP
+#
+#End Doc Library
