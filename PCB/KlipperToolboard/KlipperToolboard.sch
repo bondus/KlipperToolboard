@@ -42,7 +42,7 @@ U 1 1 5E7A3F91
 P 1100 4500
 F 0 "J4" H 1018 4175 50  0000 C CNN
 F 1 "PartFan" H 1018 4266 50  0000 C CNN
-F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal" H 1100 4500 50  0001 C CNN
+F 2 "KlipperToolboard:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal" H 1100 4500 50  0001 C CNN
 F 3 "~" H 1100 4500 50  0001 C CNN
 	1    1100 4500
 	-1   0    0    -1  
@@ -53,7 +53,7 @@ U 1 1 5E7A4BC7
 P 1150 5650
 F 0 "J5" H 1068 5325 50  0000 C CNN
 F 1 "HeaterFan" H 1068 5416 50  0000 C CNN
-F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal" H 1150 5650 50  0001 C CNN
+F 2 "KlipperToolboard:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal" H 1150 5650 50  0001 C CNN
 F 3 "~" H 1150 5650 50  0001 C CNN
 	1    1150 5650
 	-1   0    0    -1  
@@ -64,7 +64,7 @@ U 1 1 5E7A5ABD
 P 1150 6800
 F 0 "J6" H 1068 6475 50  0000 C CNN
 F 1 "Heater" H 1068 6566 50  0000 C CNN
-F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal" H 1150 6800 50  0001 C CNN
+F 2 "KlipperToolboard:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal" H 1150 6800 50  0001 C CNN
 F 3 "~" H 1150 6800 50  0001 C CNN
 	1    1150 6800
 	-1   0    0    -1  
