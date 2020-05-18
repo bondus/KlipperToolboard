@@ -22,7 +22,7 @@ All done in KiCad
 
 Possible issues:
 
-* Is the cooling for the TMC2209 adequate?
+* Is the cooling for the TMC2209 adequate? Seems to be, the board reaches about 50C under the TMC2209 when running a small stepper at 1A.
 
 Change ideas:
 
