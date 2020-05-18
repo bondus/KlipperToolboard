@@ -1,0 +1,43 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74AHC1G125
+D Single buffer gate with 3-state output
+K buffer
+F http://www.nxp.com/documents/data_sheet/74AHC_AHCT1G125.pdf
+$ENDCMP
+#
+$CMP 74HC125
+D Quad buffer/line driver 3-state
+K buffer, line driver
+F http://www.nxp.com/documents/data_sheet/74HC_HCT125.pdf
+$ENDCMP
+#
+$CMP 74HC126
+D Quad buffer/line driver; 3-state
+K buffer, line driver
+F http://www.nxp.com/documents/data_sheet/74HC_HCT126.pdf
+$ENDCMP
+#
+$CMP 74HC157
+D Quad 2 to 1 line Multiplexer
+K TTL MUX MUX2
+$ENDCMP
+#
+$CMP 74HC244
+D Octal buffer/line driver 3-state
+K buffer, line driver
+$ENDCMP
+#
+$CMP 74HC2G02
+D Dual 2-input NOR gate
+K NOR
+F http://www.nxp.com/documents/data_sheet/74HC_HCT2G02.pdf
+$ENDCMP
+#
+$CMP 74HC4002
+D Dual 4-input NOR gate
+K NOR gate
+F http://www.nxp.com/documents/data_sheet/74HC_HCT4002.pdf
+$ENDCMP
+#
+#End Doc Library

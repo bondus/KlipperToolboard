@@ -1,4 +1,4 @@
-update=26/03/2020 18:12:01
+update=03/04/2020 19:08:28
 version=1
 last_client=kicad
 [general]
@@ -25,8 +25,8 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=KlipperToolboard.net
-CopperLayerCount=4
+LastNetListRead=CanHat.net
+CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
@@ -39,10 +39,7 @@ MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=0.25
-TrackWidth2=0.3
-TrackWidth3=0.35
-TrackWidth4=0.4
-TrackWidth5=0.8
+TrackWidth2=0.35
 ViaDiameter1=0.8
 ViaDrill1=0.4
 dPairWidth1=0.2
@@ -79,11 +76,11 @@ Enabled=1
 [pcbnew/Layer.In1.Cu]
 Name=In1.Cu
 Type=0
-Enabled=1
+Enabled=0
 [pcbnew/Layer.In2.Cu]
 Name=In2.Cu
 Type=0
-Enabled=1
+Enabled=0
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
 Type=0
@@ -198,7 +195,7 @@ Type=0
 Enabled=0
 [pcbnew/Layer.B.Cu]
 Name=B.Cu
-Type=1
+Type=0
 Enabled=1
 [pcbnew/Layer.B.Adhes]
 Enabled=1
@@ -243,28 +240,6 @@ Enabled=0
 Name=Default
 Clearance=0.2
 TrackWidth=0.25
-ViaDiameter=0.8
-ViaDrill=0.4
-uViaDiameter=0.3
-uViaDrill=0.1
-dPairWidth=0.2
-dPairGap=0.25
-dPairViaGap=0.25
-[pcbnew/Netclasses/1]
-Name=24V
-Clearance=0.2
-TrackWidth=0.5
-ViaDiameter=1
-ViaDrill=0.5
-uViaDiameter=0.3
-uViaDrill=0.1
-dPairWidth=0.2
-dPairGap=0.25
-dPairViaGap=0.25
-[pcbnew/Netclasses/2]
-Name=StepperPin
-Clearance=0.2
-TrackWidth=0.32
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
