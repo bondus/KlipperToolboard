@@ -1,6 +1,5 @@
-# Klipper Toolboard
+# Huvud 3D Printer toolhead board
 A very small 3D printer board for use on a toolhead.
-
 
 ![Image of Board](Board.jpg)
 
@@ -13,12 +12,11 @@ Features:
 * One endstop
 * CAN bus
 
-Main power is 12-24V
+Main power is 12-24V. 24V is preferred to keep the currents low
 
+The CAN Bus is not terminated, instead it uses 4 wires, termination should be done at the other end.
 
-The CAN Bus is not terminated, instead it uses 4 wires, termination should be done at other end.
-
-It uses an external 5V switch regulator. 
+It uses an external 3.3V switch regulator. 
 
 All done in KiCad
 
@@ -26,11 +24,19 @@ Possible issues:
 
 * Is the cooling for the TMC2209 adequate?
 
-
 Change ideas:
 
-Is the endstop useful? Better with a servo output?
+Is the endstop useful? Could be used as a filament runout sensor.
 
+---
 
-Use an STM32F103 instead? Pinout is the same. F042 has klipper CAN support. Porting the klipper code to F103 should not be that hard.
+2020-05-18:
+
+First prototype production run is done.
+
+![First board](FirstPic.jpg)
+
+The board works mostly as intended. Some quick tests shows that the MCU can run klippy, stepper drivers, fan drivers and thermistors works perfectly fine.
+But the CAN bus has very poor signals and gets lots of TX or RX errors
+
 
