@@ -1,5 +1,5 @@
 # Huvud 3D Printer toolhead board
-A very small 3D printer board for use on a toolhead.
+A very small 3D printer board for use on a toolhead. It is designed to be used with Klipper firmware.
 
 ![Image of Board](Board.jpg)
 
