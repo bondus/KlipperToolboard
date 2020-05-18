@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 43)
+    (drawings 44)
     (tracks 789)
     (zones 0)
     (modules 73)
@@ -36,7 +36,7 @@
   )
 
   (setup
-    (last_trace_width 0.35)
+    (last_trace_width 0.25)
     (user_trace_width 0.3)
     (user_trace_width 0.35)
     (user_trace_width 0.4)
@@ -3521,6 +3521,9 @@
     )
   )
 
+  (gr_text "TODO:\nMove D1,D2,D3 away from between the connectors" (at 185.42 154.051) (layer Dwgs.User)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left))
+  )
   (dimension 37 (width 0.15) (layer Dwgs.User)
     (gr_text "37.000 mm" (at 205.5 95.7) (layer Dwgs.User)
       (effects (font (size 1 1) (thickness 0.15)))
