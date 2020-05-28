@@ -717,4 +717,6 @@ F 3 "~" H 6250 2000 50  0001 C CNN
 	1    6250 2000
 	0    -1   -1   0   
 $EndComp
+Text Notes 8000 2350 0    50   ~ 0
+TODO: \nAdd decoupling caps\nAdd jumper for terminator\nAdd connectors for power regulator for the PI\nPower connectors point up, not angled\nFuses for each power\nPins for RX/TX direct to tranciever
 $EndSCHEMATC
