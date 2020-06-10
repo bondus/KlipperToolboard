@@ -24,7 +24,7 @@ Change ideas:
 
 ---
 
-2020-05-18:
+## 2020-05-18:
 
 First prototype production run is done.
 
@@ -32,7 +32,8 @@ First prototype production run is done.
 
 They work!
 
-2020-05-29:
+---
+## 2020-05-29:
 
 ![Test setup](TestSetup.jpg)
 
@@ -47,8 +48,8 @@ After a lot of software work and many hours of testing I can report that everyth
 It is possible to fit different connectors for most functions. It is designed for mostly angled JST-XH or screw terminals but it's possible to fit straight connectors or other 2.54mm for most functions. JLCPCB do not mount through holes so the boards come without connectors.
 For a larger (>30) production run the boards would have to be panellized, which looks like a non-trivial task with KiCAD. If anyone has experience and wants to help ...
 
-
-2020-06-10:
+---
+## 2020-06-10:
 
 Version 0.4 is almost complete.
 
