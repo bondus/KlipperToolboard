@@ -24,7 +24,7 @@ Change ideas:
 
 ---
 
-2020-05-18:
+## 2020-05-18:
 
 First prototype production run is done.
 
@@ -32,7 +32,8 @@ First prototype production run is done.
 
 They work!
 
-2020-05-29:
+---
+## 2020-05-29:
 
 ![Test setup](TestSetup.jpg)
 
@@ -47,8 +48,8 @@ After a lot of software work and many hours of testing I can report that everyth
 It is possible to fit different connectors for most functions. It is designed for mostly angled JST-XH or screw terminals but it's possible to fit straight connectors or other 2.54mm for most functions. JLCPCB do not mount through holes so the boards come without connectors.
 For a larger (>30) production run the boards would have to be panellized, which looks like a non-trivial task with KiCAD. If anyone has experience and wants to help ...
 
-
-2020-06-10:
+---
+## 2020-06-10:
 
 Version 0.4 is almost complete.
 
@@ -59,7 +60,7 @@ Version 0.4 is almost complete.
 * Serial pins removed, not very useful anyway
 * Fan/heater connectors tweaked to be able to fit JST XH, screw terminals or Molex KK connectors.
 * Added a micro-USB connector for easier flashing and possibly other features. The board is not powered from USB.
-* Switched to an STM32F106, mainly to allow for a proper bootloader and flashing over USB. Or even over CAN if I develop a custom bootloader. With many boards it would be very nice to be able to bulk flash them all at once over CAN.
+* Switched to an STM32F103. Mainly to allow for a proper bootloader and flashing over USB. Or even over CAN if I develop a custom bootloader. With many boards it would be very nice to be able to bulk flash them all at once over CAN.
 
 
 I have done thermal stress testing of the board. It can run a big stepper at 1.5A, board attached very close to the hot stepper with no forced airflow and 25C ambient. The driver reaches 90C (measured with a probe) but does not shut down due to overheating. The entire board heats up as designed to act as a heatsink, most inner and outer copper layers are groundplanes to spread the heat. 
