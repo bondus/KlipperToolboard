@@ -1,26 +1,24 @@
 # Huvud 3D Printer toolhead board
-A very small 3D printer board for use on a toolhead. It is designed to be used with Klipper firmware.
+A very small 3D printer board for use on a direct drive toolhead. It is designed to be used with Klipper firmware.
+Klipper has the awesome feature to be able to use multiple MCUs connected to the host over a (relatively) high latency connection. Using CAN bus it is possible to chain many small board using just a pair of twisted wires and power. A good solution for multiple head 3D printers.
 
-![Image of Board](Board.jpg)
+![Image of Board](doc/Huvud0.4Render.jpg)
 
 Features: 
-* TMC2209 stepper driver
-* STM32F103 72Mhz MCU
+* CAN bus. 
+* One TMC2209 stepper driver for the extruder
 * Two MOSFET drivers fans
 * One bigger MOSFET driver for a hotend heater
 * Thermistor input
 * One endstop
-* CAN bus
-* USB
+* STM32F103 72Mhz MCU
+* USB, for flashing firmware
 
 Main power is 12-24V. 24V is preferred to keep the currents low
 
 All done in KiCad and open source. 
 
-
-Change ideas:
-
-* Find a better heater mosfet, our 3.3V Vgs is on the low side for that chip.
+If you are interesting in helping out, testing or eventually using this board feel free to contact me at glpontus@gmail.com.
 
 ---
 
@@ -67,10 +65,26 @@ I have done thermal stress testing of the board. It can run a big stepper at 1.5
 
 I'll very soon order another 20-30 board to send out to brave beta testers.
 
+---
+## 2020-06-24
+
+Ready to manufacture some more prototypes
+
+Among many small tweaks the heater mosfet is changed to a different one with better Rds at 3.3V Vgs. If I limit the board to 24V and a 40W heater it could use the same small mosfet as for the fans.
+
+Unfortunately JLCPCB are out of TMC2209 so I'll have to find a different prototype house that has them available. Perhaps one with 2oz outer copper layers for better thermals.
+
+CAN bus is surprisingly robust. I have tested it through a 50m roll of ethernat cable, various sketchy test setups with star networks, breadboards, close to EMC sources etc. It always works. The Bosch engineers did a good job almost 40 years ago. 
+
+---
+
 # Can Hat
 ![Can Hat](CanHat.jpg)
 
 As a sub project to this board I have developed a little power and CAN distribution board combined with an MCP2515 CAN bus controller in the form of a Raspberry Pi Hat. It is a very simple little board but has turned out to be very valuable.
 
 With some more thought put into it I think it will be a good complement to the Huvud tool board. 
+
+---
+
 
