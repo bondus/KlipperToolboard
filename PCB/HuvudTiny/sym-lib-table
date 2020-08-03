@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name TMC2209)(type Legacy)(uri ${KIPRJMOD}/TMC2209/TMC2209.lib)(options "")(descr ""))
+  (lib (name mfk_74xx)(type Legacy)(uri ${KIPRJMOD}/Symbols/mfk_74xx.lib)(options "")(descr ""))
+  (lib (name Huvud)(type Legacy)(uri ${KIPRJMOD}/Huvud.lib)(options "")(descr ""))
+)

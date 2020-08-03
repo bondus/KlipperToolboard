@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name TMC2209)(type KiCad)(uri ${KIPRJMOD}/TMC2209/footprints.pretty)(options "")(descr ""))
+  (lib (name Huvud)(type KiCad)(uri ${KIPRJMOD}/Huvud.pretty)(options "")(descr ""))
+)
