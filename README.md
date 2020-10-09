@@ -2,7 +2,7 @@
 A very small 3D printer board for use on a direct drive toolhead. It is designed to be used with Klipper firmware.
 Klipper has the awesome feature to be able to use multiple MCUs connected to the host over a (relatively) high latency connection. Using CAN bus it is possible to chain many small board using just a pair of twisted wires and power. A good solution for multiple head 3D printers.
 
-![Image of Board](doc/Huvud0.4Render.jpg)
+![Image of Board](doc/044stack.jpg)
 
 Features: 
 * CAN bus. 
