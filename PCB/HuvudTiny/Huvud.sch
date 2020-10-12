@@ -2987,6 +2987,7 @@ F 0 "J1" H 7200 4267 50  0000 C CNN
 F 1 "Conn_02x02_Odd_Even" H 7200 4176 50  0000 C CNN
 F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0400_2x02_P3.00mm_Horizontal" H 7150 4050 50  0001 C CNN
 F 3 "~" H 7150 4050 50  0001 C CNN
+F 4 "C122413" H 7150 4050 50  0001 C CNN "LCSC"
 	1    7150 4050
 	-1   0    0    -1  
 $EndComp
