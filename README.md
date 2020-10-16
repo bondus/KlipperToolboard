@@ -25,6 +25,7 @@ If you are interesting in helping out, testing or eventually using this board fe
 * [Pinout and hook up](doc/pinout.md)
 * [Klipper configuration](doc/klipper.md)
 * [CAN bus](doc/canbus.md)
+* [Prototype versions of the board](doc/versions.md)
 
 ---
 
