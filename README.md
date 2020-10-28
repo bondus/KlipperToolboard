@@ -27,7 +27,14 @@ If you are interesting in helping out, testing or eventually using this board fe
 * [CAN bus](doc/canbus.md)
 * [Prototype versions of the board](doc/versions.md)
 
+
 ---
+
+Read more about the project activites over at hackaday:
+https://hackaday.io/project/174429-huvud-a-3d-printer-tool-head-controller-board
+
+---
+
 
 ## 2020-05-18:
 
