@@ -3162,6 +3162,4 @@ F 3 "~" H 5300 3750 50  0001 C CNN
 	1    5300 3750
 	1    0    0    -1  
 $EndComp
-Text Notes 11950 1550 0    50   ~ 0
-Changes?\nAdd 470pF on each stepper pin\nAdd 100nF over each stepper current sesistor\nPull up on DIAG\nChoke on CANL/CANH\n
 $EndSCHEMATC
