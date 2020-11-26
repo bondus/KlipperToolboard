@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Socket_BeagleBone_Black)(type KiCad)(uri "$(KIPRJMOD)/Socket_BeagleBone_Black.pretty")(options "")(descr ""))
+  (lib (name cancape)(type KiCad)(uri ${KIPRJMOD}/cancape.pretty)(options "")(descr ""))
+)
