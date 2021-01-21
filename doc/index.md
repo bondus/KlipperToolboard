@@ -8,9 +8,9 @@ Klipper has the awesome feature to be able to use multiple MCUs connected to the
 
 ### Documentation
 
-* [Pinout and hook up](doc/pinout.md)
-* [Klipper configuration](doc/klipper.md)
-* [CAN bus](doc/canbus.md)
-* [Prototype versions of the board](doc/versions.md)
+* [Pinout and hook up](pinout.md)
+* [Klipper configuration](klipper.md)
+* [CAN bus](canbus.md)
+* [Prototype versions of the board](versions.md)
 
 
