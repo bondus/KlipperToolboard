@@ -2,7 +2,7 @@
 A very small 3D printer board for use on a direct drive toolhead. It is designed to be used with Klipper firmware.
 Klipper has the awesome feature to be able to use multiple MCUs connected to the host over a (relatively) high latency connection. Using CAN bus it is possible to chain many boards using just a pair of twisted wires and power. A good solution for multiple head 3D printers.
 
-![Image of Board](doc/044stack.jpg)
+![Image of Board](050_small.jpg)
 
 Features: 
 * CAN bus. 
@@ -11,7 +11,7 @@ Features:
 * One big MOSFET for the hotend heater
 * Thermistor input
 * Support for an endstop (or filament runout sensnor)
-* STM32F103 72Mhz MCU
+* STM32F103 72Mhz 32bit ARM MCU
 * USB, for flashing firmware
 
 Main power is 12-24V. 24V is preferred to keep the currents low
