@@ -36,16 +36,16 @@ Max 4A. Enough for a 100W heater when running on 24V
 ### Endstop
 
 The endstop supplies 3.3V to work with an optical endstop sensors. For a microswitch (NO) connect it to GND and Signal.
-Please note that klipper requires an enstop to be on the same board as the stepper driver, if the board is used for an extruder the endstop can not be used for a bed probe. The endstop works as a filament runout on a hotend, or as an axis endstop if the board is used for movement.
+Please note that klipper at the moment requires an endstop to be on the same board as the stepper driver. If the board is used for an extruder the endstop can not be used for a bed probe. The endstop can be used as a filament runout on a hotend, or as an axis endstop if the board is used for movement.
 
 ### CAN bus
 
-The CAN bus can be hooked up in multiple different ways. There is a 4-pin JST-PH connector with two pairs of CANL/CANH, and a 2x2 pin Molex Micro-fit shared with power. 
+Power and CAN bus in in the same Molex MicroFit connector.
 There is no on board CAN bus termination resistor.
 
 ### LED
 
-There is a user controlled green LED near the debug connector, it is connected to PC13. 
+There is a user controlled green LED near the debug connector, it is connected to PC13. It is normally on while klipper is running. It's also used by the HID bootloader to signal various states.
 
 ## Thermals
 

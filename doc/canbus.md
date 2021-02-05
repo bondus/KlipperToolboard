@@ -8,26 +8,29 @@ You will need a CAN bus adapter for your Raspberry Pi (or other board you run kl
 
 ![Waveshare CAN HAT](wavesharecanhat.jpg)
 
-The MCP2515 is a very common SPI connected CAN bus chip. It is a pretty bad options since it has very small buffers on chip and creates a lot of CPU load on the Raspberry Pi. It is not recomended if you use more than 1 or 2 boards.
+The MCP2515 is a very common SPI connected CAN bus chip. It is a pretty bad options since it has very small buffers on chip and creates a lot of CPU load on the Raspberry Pi. It is not recomended if you use more than 1 or 2 boards. 
+
+You have to run the CAN bus at 250kbits/s or possibly 500kbits/s. 
 
 When using an MCP2515 hat you have to increate the linux CAN bus tx queue length or the system will not be stable. "ip link set can0 txqueuelen 128". This is again due to the lack of buffers in the MCP2515.
 
-TBD: The txqueue can be set at reboot using udev, how is that done?
+TBD: Is the MCP2517FD based HATs any better? They are made for CAN-fd but should be backwards compatible. As the drivers are not in the mainline kernel it's non-trivial to get an MCP2516 to work. 
 
-TBD: Is the MCP2517FD based HATs any better? They are made for CAN-fd but should be backwards compatible.
-
-Easily available option is "Waveshare RS485 CAN HAT"
-
-There are some dirt cheap MCP2515 boards made for arduino. Some hacking might be needed to make them use 3.3V for SPI, the raspberry is not 5V tolerant!
-
+An easily available option is "Waveshare RS485 CAN HAT"
 
 ### USB CAN adapter
 
+![Canable USB CAN clone](canable.jpg)
+
+There is a very good open source firmware for STM32 based USB adapters, https://github.com/candle-usb/candleLight_fw. Any board running this firmware should work fine. There are plenty of open source hardware alteratives that runs this firmware. Unforunately they can be a bit hard to buy and you have to turn to aliexpress or ebay to find clones. Search for canable or cantact.
+
+If someone can find a good board please tell me so I can recomend one.
+
 ![Inomaker USB CAN](innomakerusbcan.jpg)
 
-The better option
+The Innomaker This product is readily available on Amazon and many other places. It's optically isolated and high performace, a good product on paper.
 
-Easily available option is "Innomaker CAN to USB adapter". It is even optically isolated. 
+Update Feb 2 2021: Unfortunately this adapter has bugs in the firmware that reorders incoming packets when reveiving a lot of data. It causes major problems for klipper. Not recomended!
 
 
 ## Linux setup
@@ -41,12 +44,7 @@ The program will open virtual serial ports in /tmp when boards are discovered on
 
 ## Wiring
 
-### Connecting Huvud
-
-There are two options to connect the Huvud board, either use the 4-pin JST-PH connector or the combined power and CAN bus Molex Micro-fit. All CANL pins are connected together on the board, same with the CANH pins.
-
 ### Cables
-
 
 CAN bus is a bus, it must be terminated at each end with 120ohm resistors.
 
