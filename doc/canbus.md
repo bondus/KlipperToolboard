@@ -10,11 +10,11 @@ You will need a CAN bus adapter for your Raspberry Pi (or other board you run kl
 
 The MCP2515 is a very common SPI connected CAN bus chip. It is a pretty bad options since it has very small buffers on chip and creates a lot of CPU load on the Raspberry Pi. It is not recomended if you use more than 1 or 2 boards. 
 
-You have to run the CAN bus at 250kbits/s or possibly 500kbits/s. 
+You have to run the CAN bus at 250kbits/s or possibly 500kbits/s. An older Pi, or a Pi Zero will not work reliably, it has to be a Pi3 or Pi4 or better.
 
-When using an MCP2515 hat you have to increate the linux CAN bus tx queue length or the system will not be stable. "ip link set can0 txqueuelen 128". This is again due to the lack of buffers in the MCP2515.
+When using an MCP2515 hat you have to increase the linux CAN bus tx queue length or the system will not be stable. "ip link set can0 txqueuelen 128". This is again due to the lack of buffers in the MCP2515.
 
-TBD: Is the MCP2517FD based HATs any better? They are made for CAN-fd but should be backwards compatible. As the drivers are not in the mainline kernel it's non-trivial to get an MCP2516 to work. 
+TBD: Is the MCP2517FD based HATs any better? They are made for CAN-fd but are backwards compatible. As the drivers are not in the mainline kernel it's non-trivial to get an MCP2516 to work. 
 
 An easily available option is "Waveshare RS485 CAN HAT"
 
