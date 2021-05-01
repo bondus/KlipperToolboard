@@ -7,7 +7,30 @@
 
 ![Pinout](045pinout.jpg)
 
-Look at [printer.cfg](printer.cfg) for pinouts.
+Function         | Pin  | Comment
+-----------------|------|---------
+Stepper EN       | PB6  |
+Stepper STEP     | PB3  |
+Stepper DIR      | PB4  |
+Stepper DIAG     | PB5  |
+Stepper Uart RX  | PA10 |
+Stepper Uart TX  | PA9  |
+CAN RX           | PB8  |
+CAN TX           | PB9  |
+USB +            | PA12 |
+USB -            | PA11 |
+FAN0             | PA8  |
+FAN1             | PA7  |
+Heater           | PA6  | 
+Endstop          | PA1  | 10k pull up
+Thermistor       | PA0  | 2.2k Pull Up
+LED              | PC13 | Blue LED by the debug connector
+Crystal 8Mhz     | PD0/PD1 |
+BOOT1            | PB2  | 10k pull down
+SWDIO            | PA13 | 10k pull down
+SWDCLK           | PA14 | 10k pull down
+
+Look at [printer.cfg](printer.cfg) for an example configuration.
 
 
 ## Powering
