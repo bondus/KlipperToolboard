@@ -20,6 +20,27 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Connector_Generic_Conn_01x03
+#
+DEF Connector_Generic_Conn_01x03 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Generic_Conn_01x03" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -150 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Connector_Generic_Conn_01x04
 #
 DEF Connector_Generic_Conn_01x04 J 0 40 Y N 1 F N
@@ -312,39 +333,6 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Diode_BAT54S
-#
-DEF Diode_BAT54S D 0 40 Y Y 1 F N
-F0 "D" 25 -150 50 H V L CNN
-F1 "Diode_BAT54S" -250 125 50 H V L CNN
-F2 "Package_TO_SOT_SMD:SOT-23" 75 125 50 H I L CNN
-F3 "" -120 0 50 H I C CNN
-$FPLIST
- SOT?23*
-$ENDFPLIST
-DRAW
-C 0 0 10 0 1 0 F
-P 2 0 1 0 -150 0 -50 0 N
-P 2 0 1 0 -125 -50 -125 -40 N
-P 2 0 1 0 -100 -50 -125 -50 N
-P 2 0 1 0 -100 -50 -100 50 N
-P 2 0 1 0 -100 50 -75 50 N
-P 2 0 1 0 -75 0 75 0 N
-P 2 0 1 0 -75 50 -75 40 N
-P 2 0 1 0 50 0 150 0 N
-P 2 0 1 0 125 -50 125 -40 N
-P 2 0 1 0 150 -50 125 -50 N
-P 2 0 1 0 150 -50 150 50 N
-P 2 0 1 0 150 50 175 50 N
-P 2 0 1 0 175 50 175 40 N
-P 4 0 1 0 -175 50 -175 -50 -100 0 -175 50 N
-P 4 0 1 0 75 50 75 -50 150 0 75 50 N
-X ~ 1 -300 0 150 R 50 50 1 1 P
-X ~ 2 300 0 150 L 50 50 1 1 P
-X ~ 3 0 -200 200 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Graphic_Logo_Open_Hardware_Small
 #
 DEF Graphic_Logo_Open_Hardware_Small #LOGO 0 40 Y Y 1 F N
@@ -406,6 +394,28 @@ X Vref 5 -400 -100 100 R 50 50 1 1 O
 X CANL 6 400 -100 100 L 50 50 1 1 B
 X CANH 7 400 0 100 L 50 50 1 1 B
 X Rs 8 -400 -200 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Jumper_Jumper_3_Bridged12
+#
+DEF Jumper_Jumper_3_Bridged12 JP 0 0 Y N 1 F N
+F0 "JP" -100 -100 50 H V C CNN
+F1 "Jumper_Jumper_3_Bridged12" 0 110 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SolderJumper*Bridged12*
+$ENDFPLIST
+DRAW
+A -65 -50 89 1282 518 0 1 0 N -120 20 -10 20
+C -130 0 20 0 0 0 N
+C 0 0 20 0 0 0 N
+C 130 0 20 0 0 0 N
+P 2 0 1 0 0 -50 0 -20 N
+X A 1 -250 0 100 R 50 50 1 1 P
+X C 2 0 -150 100 U 50 50 1 1 I
+X B 3 250 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
