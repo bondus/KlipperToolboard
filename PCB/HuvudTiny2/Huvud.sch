@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L TMC2209:TMC2209-LA U2
+L Huvud-rescue:TMC2209-LA-TMC2209-Huvud-rescue U2
 U 1 1 5E79A32D
 P 7550 1100
 F 0 "U2" H 8550 1487 60  0000 C CNN
@@ -69,13 +69,13 @@ Text GLabel 6550 1200 0    50   Input ~ 0
 ST_EN
 Text GLabel 9850 2100 2    50   Input ~ 0
 ST_DIR
-Text GLabel 6900 2100 0    50   Input ~ 0
+Text GLabel 6550 2100 0    50   Input ~ 0
 ST_DIAG
 Connection ~ 7150 1200
 Wire Wire Line
 	6550 1200 7150 1200
 Wire Wire Line
-	6900 2100 7550 2100
+	6550 2100 6600 2100
 Wire Wire Line
 	9550 2100 9850 2100
 $Comp
@@ -107,12 +107,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR024
 U 1 1 5E7CEA1A
-P 6750 1800
-F 0 "#PWR024" H 6750 1550 50  0001 C CNN
-F 1 "GND" V 6755 1672 50  0000 R CNN
-F 2 "" H 6750 1800 50  0001 C CNN
-F 3 "" H 6750 1800 50  0001 C CNN
-	1    6750 1800
+P 6950 1800
+F 0 "#PWR024" H 6950 1550 50  0001 C CNN
+F 1 "GND" V 6955 1672 50  0000 R CNN
+F 2 "" H 6950 1800 50  0001 C CNN
+F 3 "" H 6950 1800 50  0001 C CNN
+	1    6950 1800
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1471,7 +1471,7 @@ Wire Wire Line
 	7000 1900 7000 1800
 Connection ~ 7000 1800
 Wire Wire Line
-	7000 1800 6750 1800
+	7000 1800 6950 1800
 Wire Wire Line
 	7550 2000 7000 2000
 Wire Wire Line
@@ -1527,7 +1527,7 @@ $EndComp
 Text GLabel 3750 4550 0    50   Input ~ 0
 SWCLK
 $Comp
-L Connector:USB_B_Micro J12
+L Huvud-rescue:USB_B_Micro-Connector-Huvud-rescue J12
 U 1 1 5EEC998E
 P 4950 2650
 F 0 "J12" H 5007 3117 50  0000 C CNN
@@ -1874,7 +1874,7 @@ $EndComp
 Wire Wire Line
 	1350 6900 2150 6900
 $Comp
-L Huvud:AON7418 Q3
+L Huvud-rescue:AON7418-Huvud-Huvud-rescue Q3
 U 1 1 5F1A1E38
 P 2150 6600
 F 0 "Q3" H 2250 6150 50  0000 L CNN
@@ -2763,7 +2763,7 @@ F 3 "~" H 5850 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 11950 1550 0    50   ~ 0
-**Tweaks**\nAdd 470pF on each stepper pin\nAdd 100nF over each stepper current resistor\nPull up on DIAG\nChoke on CANL/CANH\n
+**Tweaks**\nAdd 470pF on each stepper pin\nAdd 100nF over each stepper current resistor\nChoke on CANL/CANH\n
 $Comp
 L Device:C_Small C26
 U 1 1 5FAD52E2
@@ -3541,4 +3541,34 @@ Wire Wire Line
 Connection ~ 5350 2650
 Wire Wire Line
 	5350 2650 5400 2650
+$Comp
+L Device:R_Small R39
+U 1 1 6105AD67
+P 6600 1950
+F 0 "R39" V 6404 1950 50  0000 C CNN
+F 1 "10k" V 6495 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6600 1950 50  0001 C CNN
+F 3 "~" H 6600 1950 50  0001 C CNN
+F 4 "" V 6600 1950 50  0001 C CNN "LCSC"
+	1    6600 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0109
+U 1 1 6108EB46
+P 6600 1800
+F 0 "#PWR0109" H 6600 1650 50  0001 C CNN
+F 1 "+3.3V" H 6615 1973 50  0000 C CNN
+F 2 "" H 6600 1800 50  0001 C CNN
+F 3 "" H 6600 1800 50  0001 C CNN
+	1    6600 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2050 6600 2100
+Connection ~ 6600 2100
+Wire Wire Line
+	6600 2100 7550 2100
+Wire Wire Line
+	6600 1850 6600 1800
 $EndSCHEMATC
