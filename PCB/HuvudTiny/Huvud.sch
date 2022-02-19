@@ -3163,5 +3163,67 @@ F 3 "~" H 5300 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 11950 1550 0    50   ~ 0
-Changes?\nAdd 470pF on each stepper pin\nAdd 100nF over each stepper current sesistor\nPull up on DIAG\nChoke on CANL/CANH\n
+**Tweaks**\nAdd 470pF on each stepper pin\nAdd 100nF over each stepper current sesistor\nPull up on DIAG\nChoke on CANL/CANH\n
+$Comp
+L Device:C_Small C26
+U 1 1 5FAD52E2
+P 4350 6900
+F 0 "C26" V 4121 6900 50  0000 C CNN
+F 1 "22pF" V 4212 6900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4350 6900 50  0001 C CNN
+F 3 "~" H 4350 6900 50  0001 C CNN
+F 4 "C1555" V 4350 6900 50  0001 C CNN "LCSC"
+	1    4350 6900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C29
+U 1 1 5FAD7615
+P 4350 7400
+F 0 "C29" V 4121 7400 50  0000 C CNN
+F 1 "22pF" V 4212 7400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4350 7400 50  0001 C CNN
+F 3 "~" H 4350 7400 50  0001 C CNN
+F 4 "C1555" V 4350 7400 50  0001 C CNN "LCSC"
+	1    4350 7400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4350 7250 4350 7300
+Connection ~ 4350 7250
+Wire Wire Line
+	4350 7000 4350 7050
+Connection ~ 4350 7050
+$Comp
+L power:GND #PWR049
+U 1 1 5FB26B10
+P 4400 7550
+F 0 "#PWR049" H 4400 7300 50  0001 C CNN
+F 1 "GND" V 4405 7422 50  0000 R CNN
+F 2 "" H 4400 7550 50  0001 C CNN
+F 3 "" H 4400 7550 50  0001 C CNN
+	1    4400 7550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR048
+U 1 1 5FB2716A
+P 4400 6750
+F 0 "#PWR048" H 4400 6500 50  0001 C CNN
+F 1 "GND" V 4405 6622 50  0000 R CNN
+F 2 "" H 4400 6750 50  0001 C CNN
+F 3 "" H 4400 6750 50  0001 C CNN
+	1    4400 6750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4400 6750 4350 6750
+Wire Wire Line
+	4350 6750 4350 6800
+Wire Wire Line
+	4350 7500 4350 7550
+Wire Wire Line
+	4350 7550 4400 7550
+Text Notes 11950 2100 0    50   ~ 0
+**Features**\n5V DCDC, 3.3V linear?\nAdd pins for more endstops, X Y\nInduictive probe input?\nAdd pins for accelerometer
 $EndSCHEMATC
