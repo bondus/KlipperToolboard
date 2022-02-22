@@ -30,7 +30,7 @@ If you are interesting in helping out, testing or eventually using this board fe
 ---
 Buy it at:
 
-* Lukes Lab: https://www.lukeslab.online/general-3d-printer-parts/klipper-toolboard-can-huvud-v0-5
+* Lukes Lab: https://lukeslabonline.com/products/huvud
 * Tindie: https://www.tindie.com/products/huvud/huvud-3d-printer-hotend-control-board/
 
 
