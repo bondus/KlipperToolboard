@@ -9,10 +9,10 @@
 
 Function         | Pin  | Comment
 -----------------|------|---------
-Stepper EN       | PB6  |
+Stepper EN       | PB5  |
 Stepper STEP     | PB3  |
 Stepper DIR      | PB4  |
-Stepper DIAG     | PB5  |
+Stepper DIAG     | PA15 |
 Stepper Uart RX  | PA10 |
 Stepper Uart TX  | PA9  |
 CAN RX           | PB8  |
@@ -22,13 +22,18 @@ USB -            | PA11 |
 FAN0             | PA8  |
 FAN1             | PA7  |
 Heater           | PA6  | 
-Endstop          | PA1  | 10k pull up
+Endstop1         | PB10 | 10k pull up
+Endstop2         | PB11 | 10k pull up
+Endstop3         | PB12 | 10k pull up
 Thermistor       | PA0  | 2.2k Pull Up
+Thermistor2      | PA1  | 2.2k Pull Up
 LED              | PC13 | Blue LED by the debug connector
 Crystal 8Mhz     | PD0/PD1 |
 BOOT1            | PB2  | 10k pull down
 SWDIO            | PA13 | 10k pull down
 SWDCLK           | PA14 | 10k pull down
+ADXL345 CS       | PB1 |
+
 
 Look at [printer.cfg](printer.cfg) for an example configuration.
 
@@ -48,9 +53,9 @@ The power connector is rated for max 8A
 
 JST-PH 2 mm connectors. Max 1A per fan
 
-### Thermistor / PT1000
+### Thermistors / PT1000
 
-JST-PH 2 mm connectors. The thermistor input has a 2.2KOhm pullup resistor to allow for better resolution when using a PT1000 sensor.
+JST-PH 2 mm connectors. The thermistor inputs have a 2.2KOhm pullup resistor to allow for better resolution when using a PT1000 sensor.
 
 ### Hotend heater
 
@@ -58,13 +63,12 @@ Max 4A. Enough for a 100W heater when running on 24V
 
 ### Endstop
 
-The endstop supplies 3.3V to work with an optical endstop sensors. For a microswitch (NO) connect it to GND and Signal.
-Please note that klipper at the moment requires an endstop to be on the same board as the stepper driver. If the board is used for an extruder the endstop can not be used for a bed probe. The endstop can be used as a filament runout on a hotend, or as an axis endstop if the board is used for movement.
+The endstops supply 5V to work with an optical endstop sensors. For a microswitch (NO) connect it to GND and Signal.
 
 ### CAN bus
 
 Power and CAN bus in in the same Molex MicroFit connector.
-There is no on board CAN bus termination resistor.
+There is an on-board CAN bus termination resistor soldered in place.
 
 ### LED
 
