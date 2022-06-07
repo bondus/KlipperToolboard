@@ -13,264 +13,149 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 1950 5450 2    50   Input ~ 0
+Text GLabel 1800 2100 2    50   Input ~ 0
 CANL
-Text GLabel 1950 5550 2    50   Input ~ 0
+Text GLabel 1800 2200 2    50   Input ~ 0
 CANH
 Wire Wire Line
-	1150 5550 1250 5550
+	1000 2200 1100 2200
 Wire Wire Line
-	1150 5550 1150 5900
+	1000 2200 1000 2550
 Wire Wire Line
-	1150 5900 1250 5900
+	1000 2550 1100 2550
 Wire Wire Line
-	1150 5900 1150 6300
+	1000 2550 1000 2950
 Wire Wire Line
-	1150 6300 1250 6300
-Connection ~ 1150 5900
+	1000 2950 1100 2950
+Connection ~ 1000 2550
 Wire Wire Line
-	1250 5450 1050 5450
-Connection ~ 1050 5450
+	1100 2100 900  2100
 Wire Wire Line
-	1250 5800 1050 5800
-Connection ~ 1050 5800
+	1100 2450 900  2450
+Connection ~ 900  2450
 Wire Wire Line
-	1050 5800 1050 5450
+	900  2450 900  2100
 Wire Wire Line
-	1250 6200 1050 6200
+	1100 2850 900  2850
 Wire Wire Line
-	1050 6200 1050 5800
+	900  2850 900  2450
 $Comp
 L power:GND #PWR016
 U 1 1 5F919089
-P 1050 6900
-F 0 "#PWR016" H 1050 6650 50  0001 C CNN
-F 1 "GND" H 1055 6727 50  0000 C CNN
-F 2 "" H 1050 6900 50  0001 C CNN
-F 3 "" H 1050 6900 50  0001 C CNN
-	1    1050 6900
+P 900 5400
+F 0 "#PWR016" H 900 5150 50  0001 C CNN
+F 1 "GND" H 905 5227 50  0000 C CNN
+F 2 "" H 900 5400 50  0001 C CNN
+F 3 "" H 900 5400 50  0001 C CNN
+	1    900  5400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5F91908F
-P 1050 4400
-F 0 "J1" V 1014 4212 50  0000 R CNN
-F 1 "Conn_01x02" V 923 4212 50  0000 R CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1050 4400 50  0001 C CNN
-F 3 "~" H 1050 4400 50  0001 C CNN
-	1    1050 4400
+P 1000 1050
+F 0 "J1" V 964 862 50  0000 R CNN
+F 1 "Conn_01x02" V 873 862 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1000 1050 50  0001 C CNN
+F 3 "~" H 1000 1050 50  0001 C CNN
+	1    1000 1050
 	0    -1   -1   0   
 $EndComp
-Connection ~ 1050 6200
-Wire Wire Line
-	1050 4600 1050 5450
-Connection ~ 1150 6300
+Connection ~ 900  2850
+Connection ~ 1000 2950
 $Comp
 L Connector_Generic:Conn_02x02_Top_Bottom J2
 U 1 1 5F9190A7
-P 1550 5450
-F 0 "J2" H 1600 5667 50  0000 C CNN
-F 1 "Conn_02x02_Top_Bottom" H 1600 5576 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical" H 1550 5450 50  0001 C CNN
-F 3 "~" H 1550 5450 50  0001 C CNN
-	1    1550 5450
+P 1400 2100
+F 0 "J2" H 1450 2317 50  0000 C CNN
+F 1 "Conn_02x02_Top_Bottom" H 1450 2226 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical" H 1400 2100 50  0001 C CNN
+F 3 "~" H 1400 2100 50  0001 C CNN
+	1    1400 2100
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1950 5450 1750 5450
+	1800 2100 1600 2100
 Wire Wire Line
-	1750 5550 1950 5550
+	1600 2200 1800 2200
 $Comp
 L Connector_Generic:Conn_02x02_Top_Bottom J3
 U 1 1 5F9190AF
-P 1550 5800
-F 0 "J3" H 1600 6017 50  0000 C CNN
-F 1 "Conn_02x02_Top_Bottom" H 1600 5926 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical" H 1550 5800 50  0001 C CNN
-F 3 "~" H 1550 5800 50  0001 C CNN
-	1    1550 5800
+P 1400 2450
+F 0 "J3" H 1450 2667 50  0000 C CNN
+F 1 "Conn_02x02_Top_Bottom" H 1450 2576 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical" H 1400 2450 50  0001 C CNN
+F 3 "~" H 1400 2450 50  0001 C CNN
+	1    1400 2450
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x02_Top_Bottom J4
 U 1 1 5F9190B5
-P 1550 6200
-F 0 "J4" H 1600 6417 50  0000 C CNN
-F 1 "Conn_02x02_Top_Bottom" H 1600 6326 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical" H 1550 6200 50  0001 C CNN
-F 3 "~" H 1550 6200 50  0001 C CNN
-	1    1550 6200
+P 1400 2850
+F 0 "J4" H 1450 3067 50  0000 C CNN
+F 1 "Conn_02x02_Top_Bottom" H 1450 2976 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical" H 1400 2850 50  0001 C CNN
+F 3 "~" H 1400 2850 50  0001 C CNN
+	1    1400 2850
 	-1   0    0    -1  
 $EndComp
-Text GLabel 1950 5800 2    50   Input ~ 0
+Text GLabel 1800 2450 2    50   Input ~ 0
 CANL
-Text GLabel 1950 5900 2    50   Input ~ 0
+Text GLabel 1800 2550 2    50   Input ~ 0
 CANH
 Wire Wire Line
-	1950 5800 1750 5800
+	1800 2450 1600 2450
 Wire Wire Line
-	1750 5900 1950 5900
-Text GLabel 1950 6200 2    50   Input ~ 0
+	1600 2550 1800 2550
+Text GLabel 1800 2850 2    50   Input ~ 0
 CANL
-Text GLabel 1950 6300 2    50   Input ~ 0
+Text GLabel 1800 2950 2    50   Input ~ 0
 CANH
 Wire Wire Line
-	1950 6200 1750 6200
+	1800 2850 1600 2850
 Wire Wire Line
-	1750 6300 1950 6300
+	1600 2950 1800 2950
 Wire Wire Line
-	1150 6750 1250 6750
+	1000 3400 1100 3400
 Wire Wire Line
-	1250 6650 1050 6650
+	1100 3300 900  3300
 $Comp
 L Connector_Generic:Conn_02x02_Top_Bottom J5
 U 1 1 5F9190C5
-P 1550 6650
-F 0 "J5" H 1600 6867 50  0000 C CNN
-F 1 "Conn_02x02_Top_Bottom" H 1600 6776 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical" H 1550 6650 50  0001 C CNN
-F 3 "~" H 1550 6650 50  0001 C CNN
-	1    1550 6650
+P 1400 3300
+F 0 "J5" H 1450 3517 50  0000 C CNN
+F 1 "Conn_02x02_Top_Bottom" H 1450 3426 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical" H 1400 3300 50  0001 C CNN
+F 3 "~" H 1400 3300 50  0001 C CNN
+	1    1400 3300
 	-1   0    0    -1  
 $EndComp
-Text GLabel 1950 6650 2    50   Input ~ 0
+Text GLabel 1800 3300 2    50   Input ~ 0
 CANL
-Text GLabel 1950 6750 2    50   Input ~ 0
+Text GLabel 1800 3400 2    50   Input ~ 0
 CANH
 Wire Wire Line
-	1950 6650 1750 6650
+	1800 3300 1600 3300
 Wire Wire Line
-	1750 6750 1950 6750
+	1600 3400 1800 3400
 Wire Wire Line
-	1150 6300 1150 6750
-Connection ~ 1050 6650
+	1000 2950 1000 3400
+Connection ~ 900  3300
 Wire Wire Line
-	1050 6650 1050 6900
+	900  2850 900  3300
 Wire Wire Line
-	1050 6200 1050 6650
-Wire Wire Line
-	1150 5200 1150 5550
-Connection ~ 1150 5550
-Text GLabel 3400 5450 2    50   Input ~ 0
-CAN2L
-Text GLabel 3400 5550 2    50   Input ~ 0
-CAN2H
-Wire Wire Line
-	2600 5550 2700 5550
-Wire Wire Line
-	2600 5550 2600 5900
-Wire Wire Line
-	2600 5900 2700 5900
-Wire Wire Line
-	2600 5900 2600 6300
-Wire Wire Line
-	2600 6300 2700 6300
-Connection ~ 2600 5900
-Wire Wire Line
-	2700 5450 2500 5450
-Wire Wire Line
-	2700 5800 2500 5800
-Connection ~ 2500 5800
-Wire Wire Line
-	2500 5800 2500 5450
-Wire Wire Line
-	2700 6200 2500 6200
-Wire Wire Line
-	2500 6200 2500 5800
-$Comp
-L power:GND #PWR018
-U 1 1 5F9190EF
-P 2500 6900
-F 0 "#PWR018" H 2500 6650 50  0001 C CNN
-F 1 "GND" H 2505 6727 50  0000 C CNN
-F 2 "" H 2500 6900 50  0001 C CNN
-F 3 "" H 2500 6900 50  0001 C CNN
-	1    2500 6900
-	1    0    0    -1  
-$EndComp
-Connection ~ 2500 6200
-Connection ~ 2600 6300
-$Comp
-L Connector_Generic:Conn_02x02_Top_Bottom J6
-U 1 1 5F9190F8
-P 3000 5450
-F 0 "J6" H 3050 5667 50  0000 C CNN
-F 1 "Conn_02x02_Top_Bottom" H 3050 5576 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical" H 3000 5450 50  0001 C CNN
-F 3 "~" H 3000 5450 50  0001 C CNN
-	1    3000 5450
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3400 5450 3200 5450
-Wire Wire Line
-	3200 5550 3400 5550
-$Comp
-L Connector_Generic:Conn_02x02_Top_Bottom J7
-U 1 1 5F919100
-P 3000 5800
-F 0 "J7" H 3050 6017 50  0000 C CNN
-F 1 "Conn_02x02_Top_Bottom" H 3050 5926 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical" H 3000 5800 50  0001 C CNN
-F 3 "~" H 3000 5800 50  0001 C CNN
-	1    3000 5800
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x02_Top_Bottom J8
-U 1 1 5F919106
-P 3000 6200
-F 0 "J8" H 3050 6417 50  0000 C CNN
-F 1 "Conn_02x02_Top_Bottom" H 3050 6326 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical" H 3000 6200 50  0001 C CNN
-F 3 "~" H 3000 6200 50  0001 C CNN
-	1    3000 6200
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3400 5800 3200 5800
-Wire Wire Line
-	3200 5900 3400 5900
-Wire Wire Line
-	3400 6200 3200 6200
-Wire Wire Line
-	3200 6300 3400 6300
-Wire Wire Line
-	2600 6750 2700 6750
-Wire Wire Line
-	2700 6650 2500 6650
-$Comp
-L Connector_Generic:Conn_02x02_Top_Bottom J9
-U 1 1 5F919116
-P 3000 6650
-F 0 "J9" H 3050 6867 50  0000 C CNN
-F 1 "Conn_02x02_Top_Bottom" H 3050 6776 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical" H 3000 6650 50  0001 C CNN
-F 3 "~" H 3000 6650 50  0001 C CNN
-	1    3000 6650
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3400 6650 3200 6650
-Wire Wire Line
-	3200 6750 3400 6750
-Wire Wire Line
-	2600 6300 2600 6750
-Connection ~ 2500 6650
-Wire Wire Line
-	2500 6650 2500 6900
-Wire Wire Line
-	2500 6200 2500 6650
+	1000 1850 1000 2200
+Connection ~ 1000 2200
 $Comp
 L Device:Fuse F2
 U 1 1 5F919126
-P 1150 5050
-F 0 "F2" H 1210 5096 50  0000 L CNN
-F 1 "Fuse" H 1210 5005 50  0000 L CNN
-F 2 "cancape:3544-2_FuseHolder" V 1080 5050 50  0001 C CNN
-F 3 "~" H 1150 5050 50  0001 C CNN
-	1    1150 5050
+P 1000 1700
+F 0 "F2" H 1060 1746 50  0000 L CNN
+F 1 "Fuse" H 1060 1655 50  0000 L CNN
+F 2 "cancape:KEYSTONE-3568" V 930 1700 50  0001 C CNN
+F 3 "~" H 1000 1700 50  0001 C CNN
+	1    1000 1700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -302,10 +187,6 @@ F 3 "~" H 4100 6950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4450 6950 4450 7000
-Text GLabel 5300 7300 3    50   Input ~ 0
-CANL
-Text GLabel 5300 6650 1    50   Input ~ 0
-CANH
 Wire Wire Line
 	4450 6650 4450 6850
 Wire Wire Line
@@ -313,93 +194,354 @@ Wire Wire Line
 Wire Wire Line
 	4300 6950 4450 6950
 Wire Wire Line
-	4450 7200 4450 7300
-$Comp
-L Device:R_Small R?
-U 1 1 5F9255B0
-P 5300 7100
-AR Path="/5F8EE624/5F9255B0" Ref="R?"  Part="1" 
-AR Path="/5F9255B0" Ref="R2"  Part="1" 
-F 0 "R2" V 5104 7100 50  0000 C CNN
-F 1 "120R" V 5195 7100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5300 7100 50  0001 C CNN
-F 3 "~" H 5300 7100 50  0001 C CNN
-F 4 "C22787" H 5300 7100 50  0001 C CNN "LCSC Part #"
-	1    5300 7100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 5F9255B6
-P 4950 6950
-AR Path="/5F8EE624/5F9255B6" Ref="J?"  Part="1" 
-AR Path="/5F9255B6" Ref="J11"  Part="1" 
-F 0 "J11" H 4868 6625 50  0000 C CNN
-F 1 "Conn_01x02" H 4868 6716 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4950 6950 50  0001 C CNN
-F 3 "~" H 4950 6950 50  0001 C CNN
-	1    4950 6950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5300 6950 5300 7000
-Wire Wire Line
-	5300 6650 5300 6850
-Wire Wire Line
-	5300 6850 5150 6850
-Wire Wire Line
-	5150 6950 5300 6950
-Wire Wire Line
-	5300 7200 5300 7300
+	4450 7200 4450 7250
 Text GLabel 4450 7300 3    50   Input ~ 0
 CANL
 Text GLabel 4450 6650 1    50   Input ~ 0
 CANH
-Text GLabel 3400 5800 2    50   Input ~ 0
-CAN2L
-Text GLabel 3400 5900 2    50   Input ~ 0
-CAN2H
-Text GLabel 3400 6200 2    50   Input ~ 0
-CAN2L
-Text GLabel 3400 6300 2    50   Input ~ 0
-CAN2H
-Text GLabel 3400 6650 2    50   Input ~ 0
-CAN2L
-Text GLabel 3400 6750 2    50   Input ~ 0
-CAN2H
-Text GLabel 2950 4100 2    50   Input ~ 0
-CAN2L
-Text GLabel 2950 4000 2    50   Input ~ 0
-CAN2H
-Text GLabel 2550 4000 0    50   Input ~ 0
+Wire Wire Line
+	1000 1250 1000 1550
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5FC7A5EB
+P 3000 5400
+AR Path="/5F8EE624/5FC7A5EB" Ref="J?"  Part="1" 
+AR Path="/5FC7A5EB" Ref="J6"  Part="1" 
+F 0 "J6" H 2918 5075 50  0000 C CNN
+F 1 "Conn_01x02" H 2918 5166 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 3000 5400 50  0001 C CNN
+F 3 "~" H 3000 5400 50  0001 C CNN
+	1    3000 5400
+	-1   0    0    1   
+$EndComp
+Text GLabel 3400 5300 2    50   Input ~ 0
 CANH
-Text GLabel 2550 4100 0    50   Input ~ 0
+Text GLabel 3400 5400 2    50   Input ~ 0
 CANL
 Wire Wire Line
-	2550 4000 2950 4000
+	3200 5300 3400 5300
 Wire Wire Line
-	2550 4100 2950 4100
-Wire Wire Line
-	1150 4600 1150 4800
+	3400 5400 3200 5400
 $Comp
-L Device:Fuse F1
-U 1 1 5FBE3F29
-P 2600 5100
-F 0 "F1" H 2660 5146 50  0000 L CNN
-F 1 "Fuse" H 2660 5055 50  0000 L CNN
-F 2 "cancape:3544-2_FuseHolder" V 2530 5100 50  0001 C CNN
-F 3 "~" H 2600 5100 50  0001 C CNN
-	1    2600 5100
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5FC85A6C
+P 3000 4800
+AR Path="/5F8EE624/5FC85A6C" Ref="J?"  Part="1" 
+AR Path="/5FC85A6C" Ref="J7"  Part="1" 
+F 0 "J7" H 2918 4475 50  0000 C CNN
+F 1 "Conn_01x02" H 2918 4566 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 3000 4800 50  0001 C CNN
+F 3 "~" H 3000 4800 50  0001 C CNN
+	1    3000 4800
+	-1   0    0    1   
+$EndComp
+Text GLabel 3400 4700 2    50   Input ~ 0
+CANH
+Text GLabel 3400 4800 2    50   Input ~ 0
+CANL
+Wire Wire Line
+	3200 4700 3400 4700
+Wire Wire Line
+	3400 4800 3200 4800
+Text Label 1000 2000 1    50   ~ 0
+VINF
+$Comp
+L Connector_Generic:Conn_01x01 J8
+U 1 1 5FC526E6
+P 4350 5100
+F 0 "J8" V 4314 5012 50  0000 R CNN
+F 1 "Conn_01x01" V 4223 5012 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4350 5100 50  0001 C CNN
+F 3 "~" H 4350 5100 50  0001 C CNN
+	1    4350 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5FC53658
+P 4350 5400
+F 0 "#PWR01" H 4350 5150 50  0001 C CNN
+F 1 "GND" H 4355 5227 50  0000 C CNN
+F 2 "" H 4350 5400 50  0001 C CNN
+F 3 "" H 4350 5400 50  0001 C CNN
+	1    4350 5400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 5250 2600 5550
-Connection ~ 2600 5550
+	4350 5300 4350 5400
+$Comp
+L Connector_Generic:Conn_01x01 J9
+U 1 1 5FC55656
+P 5000 5100
+F 0 "J9" V 4964 5012 50  0000 R CNN
+F 1 "Conn_01x01" V 4873 5012 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5000 5100 50  0001 C CNN
+F 3 "~" H 5000 5100 50  0001 C CNN
+	1    5000 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5FC5565C
+P 5000 5400
+F 0 "#PWR02" H 5000 5150 50  0001 C CNN
+F 1 "GND" H 5005 5227 50  0000 C CNN
+F 2 "" H 5000 5400 50  0001 C CNN
+F 3 "" H 5000 5400 50  0001 C CNN
+	1    5000 5400
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	2600 4800 1150 4800
+	5000 5300 5000 5400
+$Comp
+L Connector_Generic:Conn_01x01 J12
+U 1 1 5FC56529
+P 5650 5100
+F 0 "J12" V 5614 5012 50  0000 R CNN
+F 1 "Conn_01x01" V 5523 5012 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5650 5100 50  0001 C CNN
+F 3 "~" H 5650 5100 50  0001 C CNN
+	1    5650 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5FC5652F
+P 5650 5400
+F 0 "#PWR03" H 5650 5150 50  0001 C CNN
+F 1 "GND" H 5655 5227 50  0000 C CNN
+F 2 "" H 5650 5400 50  0001 C CNN
+F 3 "" H 5650 5400 50  0001 C CNN
+	1    5650 5400
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	2600 4800 2600 4950
-Connection ~ 1150 4800
+	5650 5300 5650 5400
+$Comp
+L Connector_Generic:Conn_01x01 J13
+U 1 1 5FC5750E
+P 6300 5100
+F 0 "J13" V 6264 5012 50  0000 R CNN
+F 1 "Conn_01x01" V 6173 5012 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6300 5100 50  0001 C CNN
+F 3 "~" H 6300 5100 50  0001 C CNN
+	1    6300 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5FC57514
+P 6300 5400
+F 0 "#PWR04" H 6300 5150 50  0001 C CNN
+F 1 "GND" H 6305 5227 50  0000 C CNN
+F 2 "" H 6300 5400 50  0001 C CNN
+F 3 "" H 6300 5400 50  0001 C CNN
+	1    6300 5400
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	1150 4800 1150 4900
+	6300 5300 6300 5400
+Text Label 1000 1350 3    50   ~ 0
+VIN
+$Comp
+L power:GND #PWR0101
+U 1 1 5FC61F5B
+P 1100 1300
+F 0 "#PWR0101" H 1100 1050 50  0001 C CNN
+F 1 "GND" H 1105 1127 50  0000 C CNN
+F 2 "" H 1100 1300 50  0001 C CNN
+F 3 "" H 1100 1300 50  0001 C CNN
+	1    1100 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1300 1100 1250
+$Comp
+L Device:R_Small R?
+U 1 1 5FC7595D
+P 5000 7100
+AR Path="/5F8EE624/5FC7595D" Ref="R?"  Part="1" 
+AR Path="/5FC7595D" Ref="R2"  Part="1" 
+F 0 "R2" V 4804 7100 50  0000 C CNN
+F 1 "120R" V 4895 7100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5000 7100 50  0001 C CNN
+F 3 "~" H 5000 7100 50  0001 C CNN
+F 4 "" H 5000 7100 50  0001 C CNN "LCSC Part #"
+	1    5000 7100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4450 6950 5000 6950
+Wire Wire Line
+	5000 6950 5000 7000
+Connection ~ 4450 6950
+Wire Wire Line
+	5000 7200 5000 7250
+Wire Wire Line
+	5000 7250 4450 7250
+Connection ~ 4450 7250
+Wire Wire Line
+	4450 7250 4450 7300
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5FC8C18E
+P 3700 3300
+F 0 "H1" H 3800 3349 50  0000 L CNN
+F 1 "MountingHole" H 3800 3258 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3700 3300 50  0001 C CNN
+F 3 "~" H 3700 3300 50  0001 C CNN
+	1    3700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5FC97473
+P 4450 3300
+F 0 "H2" H 4550 3349 50  0000 L CNN
+F 1 "MountingHole" H 4550 3258 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4450 3300 50  0001 C CNN
+F 3 "~" H 4450 3300 50  0001 C CNN
+	1    4450 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5FC981D2
+P 3700 3400
+F 0 "#PWR05" H 3700 3150 50  0001 C CNN
+F 1 "GND" H 3705 3227 50  0000 C CNN
+F 2 "" H 3700 3400 50  0001 C CNN
+F 3 "" H 3700 3400 50  0001 C CNN
+	1    3700 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5FC99461
+P 4450 3400
+F 0 "#PWR06" H 4450 3150 50  0001 C CNN
+F 1 "GND" H 4455 3227 50  0000 C CNN
+F 2 "" H 4450 3400 50  0001 C CNN
+F 3 "" H 4450 3400 50  0001 C CNN
+	1    4450 3400
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 3850 2    50   Input ~ 0
+CANL
+Text GLabel 1800 3950 2    50   Input ~ 0
+CANH
+$Comp
+L Connector_Generic:Conn_02x02_Top_Bottom J11
+U 1 1 5FCBCC59
+P 1400 3850
+F 0 "J11" H 1450 4067 50  0000 C CNN
+F 1 "Conn_02x02_Top_Bottom" H 1450 3976 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0400_2x02_P3.00mm_Horizontal" H 1400 3850 50  0001 C CNN
+F 3 "~" H 1400 3850 50  0001 C CNN
+	1    1400 3850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 3850 1600 3850
+Wire Wire Line
+	1600 3950 1800 3950
+Text GLabel 1800 4200 2    50   Input ~ 0
+CANL
+Text GLabel 1800 4300 2    50   Input ~ 0
+CANH
+Wire Wire Line
+	1800 4200 1600 4200
+Wire Wire Line
+	1600 4300 1800 4300
+Text GLabel 1800 4600 2    50   Input ~ 0
+CANL
+Text GLabel 1800 4700 2    50   Input ~ 0
+CANH
+Wire Wire Line
+	1800 4600 1600 4600
+Wire Wire Line
+	1600 4700 1800 4700
+Text GLabel 1800 5050 2    50   Input ~ 0
+CANL
+Text GLabel 1800 5150 2    50   Input ~ 0
+CANH
+Wire Wire Line
+	1800 5050 1600 5050
+Wire Wire Line
+	1600 5150 1800 5150
+$Comp
+L Connector_Generic:Conn_02x02_Top_Bottom J14
+U 1 1 5FCD5E8A
+P 1400 4200
+F 0 "J14" H 1450 4417 50  0000 C CNN
+F 1 "Conn_02x02_Top_Bottom" H 1450 4326 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0400_2x02_P3.00mm_Horizontal" H 1400 4200 50  0001 C CNN
+F 3 "~" H 1400 4200 50  0001 C CNN
+	1    1400 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Top_Bottom J15
+U 1 1 5FCD6646
+P 1400 4600
+F 0 "J15" H 1450 4817 50  0000 C CNN
+F 1 "Conn_02x02_Top_Bottom" H 1450 4726 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0400_2x02_P3.00mm_Horizontal" H 1400 4600 50  0001 C CNN
+F 3 "~" H 1400 4600 50  0001 C CNN
+	1    1400 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Top_Bottom J16
+U 1 1 5FCD6E01
+P 1400 5050
+F 0 "J16" H 1450 5267 50  0000 C CNN
+F 1 "Conn_02x02_Top_Bottom" H 1450 5176 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0400_2x02_P3.00mm_Horizontal" H 1400 5050 50  0001 C CNN
+F 3 "~" H 1400 5050 50  0001 C CNN
+	1    1400 5050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	900  3850 1100 3850
+Wire Wire Line
+	900  3300 900  3850
+Wire Wire Line
+	900  3850 900  4200
+Wire Wire Line
+	900  4200 1100 4200
+Connection ~ 900  3850
+Wire Wire Line
+	900  4200 900  4600
+Wire Wire Line
+	900  4600 1100 4600
+Connection ~ 900  4200
+Wire Wire Line
+	900  4600 900  5050
+Wire Wire Line
+	900  5050 1100 5050
+Connection ~ 900  4600
+Wire Wire Line
+	900  5050 900  5400
+Connection ~ 900  5050
+Wire Wire Line
+	1100 5150 1000 5150
+Wire Wire Line
+	1000 5150 1000 4700
+Connection ~ 1000 3400
+Wire Wire Line
+	1100 3950 1000 3950
+Connection ~ 1000 3950
+Wire Wire Line
+	1000 3950 1000 3400
+Wire Wire Line
+	1100 4300 1000 4300
+Connection ~ 1000 4300
+Wire Wire Line
+	1000 4300 1000 3950
+Wire Wire Line
+	1100 4700 1000 4700
+Connection ~ 1000 4700
+Wire Wire Line
+	1000 4700 1000 4300
 $EndSCHEMATC
