@@ -1,0 +1,10 @@
+### Module positions - created on Mon Sep 26 13:26:54 2022 ###
+### Printed by Pcbnew version (6.0.5)
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val         Package                 PosX       PosY       Rot  Side
+C37       470pF/100V  C_0603_1608Metric   -35.1500    15.5000    0.0000  bottom
+C38       470pF/100V  C_0603_1608Metric   -35.1500    14.0000    0.0000  bottom
+C39       470pF/100V  C_0603_1608Metric   -35.1500    17.0000    0.0000  bottom
+C40       470pF/100V  C_0603_1608Metric   -35.1500    18.5000    0.0000  bottom
+## End
