@@ -10,7 +10,7 @@ Features:
 * Two MOSFETs for fans
 * One big MOSFET for the hotend heater
 * Thermistor input
-* Support for an endstop (or filament runout sensnor)
+* Support for an endstop (or filament runout sensor)
 * STM32F103 72Mhz 32bit ARM MCU
 * USB, for flashing firmware
 
